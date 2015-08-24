@@ -132,6 +132,11 @@ add_action( 'wp_enqueue_scripts', '_s_scripts' );
 require get_template_directory() . '/inc/conditional-tag-check.php';
 
 /**
+ * Additional Theme Configuration
+ */
+require get_template_directory() . '/inc/config.php';
+
+/**
  * Theme Wrapper based on Sage
  * @link https://github.com/roots/sage/blob/master/lib/wrapper.php Sage theme wrapper
  */
