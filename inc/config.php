@@ -15,7 +15,7 @@ if ( !defined( 'WP_ENV' ) ) {
 function _s_display_sidebar() {
   static $display;
   if ( !isset( $display ) ) {
-    $conditionalCheck = new ConditionalTagCheck(
+    $conditionalCheck = new _S_ConditionalTagCheck(
       /**
        * Any of these conditional tags that return true won't show the sidebar.
        * You can also specify your own custom function as long as it returns a boolean.
