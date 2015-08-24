@@ -127,6 +127,11 @@ function _s_scripts() {
 add_action( 'wp_enqueue_scripts', '_s_scripts' );
 
 /**
+ * Conditional Tag Check
+ */
+require get_template_directory() . '/inc/conditional-tag-check.php';
+
+/**
  * Theme Wrapper based on Sage
  * @link https://github.com/roots/sage/blob/master/lib/wrapper.php Sage theme wrapper
  */
