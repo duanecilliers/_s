@@ -10,6 +10,10 @@ get_header(); ?>
     </main><!-- #main -->
   </div><!-- #primary -->
 
-<?php include _s_sidebar_path(); ?>
+<?php if ( _s_display_sidebar() ) : ?>
+  <div id="secondary" class="widget-area" role="complementary">
+    <?php include _s_sidebar_path(); ?>
+  </div><!-- #secondary -->
+<?php endif; ?>
 <?php get_template_part( 'template-parts', 'footer' ); ?>
 <?php wp_footer(); ?>
