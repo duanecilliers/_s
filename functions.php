@@ -127,6 +127,12 @@ function _s_scripts() {
 add_action( 'wp_enqueue_scripts', '_s_scripts' );
 
 /**
+ * Theme Wrapper based on Sage
+ * @link https://github.com/roots/sage/blob/master/lib/wrapper.php Sage theme wrapper
+ */
+require get_template_directory() . '/inc/wrapper.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
